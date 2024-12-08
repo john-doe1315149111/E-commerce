@@ -1,0 +1,271 @@
+html, body {
+    background-color: white; /* Sets the background color to white */
+    font-family: 'Arial', sans-serif; /* Specifies the font family as Arial */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+@media (max-width: 768px) { /* Defines responsive rules for screens smaller than 768px */
+    header {
+        padding: 10px 5px; /* Adjusts padding in header for small screens */
+    }
+    header h1 {
+        font-size: 1.5rem; /* Reduces the font size of the heading */
+    }
+}
+header {
+    background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg'); /* Sets the background image for the header */
+    background-size: cover; /* Ensures the background image covers the entire header */
+    color: white; /* Sets the text color to white */
+    padding: 10px; /* Adds padding inside the header */
+    width: 100%; /* Makes the header take up the full width of the page */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.199); /* Adds a shadow effect to the header */
+    position: fixed; /* Fixes the header at the top of the page */
+    top: 0; /* Positions the header at the top */
+    left: 0; /* Aligns the header to the left */
+    z-index: 1000; /* Ensures the header appears above other content */
+    text-align: center; /* Centers the text in the header */
+}
+header h1 {
+    margin: 0; /* Removes the margin from the heading */
+    font-size: 2.5rem; /* Sets the font size of the header */
+}
+@media (max-width: 768px) { /* Responsive changes for small screens */
+    header {
+        padding: 10px 5px; /* Adjust padding for small screens */
+    }
+    header h1 {
+        display: none; /* Hides the heading on smaller screens */
+    }
+    #search {
+        padding: 8px; /* Adjust padding in the search bar */
+        width: calc(110% - 50px); /* Adjusts the width of the search bar */
+    }
+    #search input {
+        width: 100%; /* Makes the search input take up 100% of the width */
+        padding: 16px; /* Adds padding to the search input */
+        font-size: 1.4rem; /* Increases font size inside the input */
+    }
+    button {
+        width: 25%; /* Sets the button width to 25% */
+        padding: 12px 12px; /* Adds padding inside the button */
+        margin-right: 60px; /* Adds right margin */
+    }
+    .profile {
+        left: 78%; /* Adjusts the position of the profile */
+    }
+    .user-name {
+        display: none; /* Hides the user name */
+    }
+    .product .add-to-cart {
+        width: 30%; /* Adjusts the width of the add-to-cart button */
+    }
+}
+.ad-container {
+    position: relative; /* Sets relative positioning */
+    width: 100%; /* Makes the ad container take up full width */
+    height: 500px; /* Sets the height of the ad container */
+    overflow: hidden; /* Hides overflow content */
+    border-radius: 16px; /* Rounds the corners of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103); /* Adds a shadow effect */
+}
+.ad-headline {
+    width: 100%; /* Makes the ad headline take up full width */
+    height: 100%; /* Makes the ad headline take up full height */
+    position: absolute; /* Positions the ad headline absolutely */
+    left: 100%; /* Positions the ad headline off-screen to the right */
+    transition: left 1s ease-in-out; /* Animates the position of the ad headline */
+}
+.ad-container .ad-headline.active {
+    left: 0; /* Moves the headline to the left when active */
+}
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Sets the font family for h1 */
+    letter-spacing: 3.0px; /* Adds letter spacing to the heading */
+    font-weight: lighter; /* Makes the font weight lighter */
+    top: 10px; /* Positions the heading 10px from the top */
+    width: 20%; /* Sets the width of the heading */
+    position: fixed; /* Fixes the heading at the top of the page */
+    color: rgba(30, 22, 70, 0.842); /* Sets the text color with opacity */
+}
+h2 {
+    text-align: left; /* Aligns the heading text to the left */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Sets the font family */
+    font-weight: normal; /* Sets the font weight to normal */
+    line-height: 1.5; /* Sets the line height */
+}
+h4 {
+    width: 30%; /* Sets the width of the h4 */
+    font-size: 150%; /* Increases the font size */
+    font-weight: lighter; /* Makes the font weight lighter */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Sets the font family */
+}
+h5 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Sets the font family */
+    font-weight: normal; /* Sets the font weight to normal */
+    text-indent: 0; /* Removes text indentation */
+    text-align: left; /* Aligns the text to the left */
+}
+.profile {
+    position: absolute; /* Positions the profile absolutely */
+    top: 15px; /* Sets the top position */
+    right: 30px; /* Sets the right position */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Aligns items in the center */
+    padding: 3px 15px; /* Adds padding to the profile */
+}
+.user-icon {
+    width: 40px; /* Sets the width of the user icon */
+    height: 40px; /* Sets the height of the user icon */
+    border-radius: 50%; /* Rounds the user icon to a circle */
+    margin-right: 5px; /* Adds right margin */
+}
+.user-name {
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font family */
+    font-size: 16px; /* Sets the font size */
+    font-weight: bold; /* Makes the font bold */
+    color: #ffffff; /* Sets the text color to white */
+}
+#search-bar::placeholder {
+    font-style: italic; /* Makes the placeholder text italic */
+}
+#search {
+    top: 10px; /* Sets the top position of the search bar */
+    text-align: center; /* Centers the text inside the search bar */
+    padding: 8px; /* Adds padding inside the search bar */
+}
+#search input {
+    width: 40%; /* Sets the width of the search input */
+    padding: 10px; /* Adds padding inside the input */
+    font-size: 1rem; /* Sets the font size of the input */
+    border-radius: 32px; /* Rounds the corners of the input */
+    border: 1px solid #ffffff; /* Adds a white border */
+    outline: none; /* Removes the outline */
+    transition: border-color 0.3s ease; /* Adds a smooth border color transition */
+}
+#search input:focus {
+    border-color: #27ae60; /* Changes border color when the input is focused */
+}
+
+button {
+    padding: 10px 13px; /* Adds padding inside the button */
+    font-size: 16px; /* Sets the font size of the button */
+    margin-left: 3px; /* Adds left margin */
+    background-color: rgb(255, 255, 255); /* Sets the background color */
+    color: rgba(4, 0, 36, 0.438); /* Sets the text color */
+    border: none; /* Removes the border */
+    border-radius: 32px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    font-weight: bold; /* Makes the font bold */
+}
+
+.product {
+    display: inline-block; /* Displays the product inline */
+    width: 260px; /* Sets the width of the product */
+    margin: 15px; /* Adds margin around the product */
+    padding: 25px; /* Adds padding inside the product */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103); /* Adds a shadow effect */
+    text-align: center; /* Centers the text inside the product */
+    transition: transform 0.3s ease; /* Adds a transform transition */
+    background-color: #ffffffa4; /* Sets a semi-transparent background color */
+}
+.product:hover {
+    transform: translateY(-5px); /* Moves the product slightly up on hover */
+}
+#products {
+    padding: 50px 20px; /* Adds padding around the product container */
+    text-align: center; /* Centers the text */
+}
+#products h2 {
+    font-size: 2rem; /* Sets the font size of the heading */
+    margin-bottom: 30px; /* Adds margin below the heading */
+    color: #2c3e50; /* Sets the text color */
+}
+.product h3 {
+    margin: 15px 5; /* Adds margin around the product title */
+    width: 90%; /* Sets the width of the product title */
+    font-size: 130%; /* Increases the font size */
+    color: #0f0f0f; /* Sets the text color */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Sets the font family */
+    font-weight: 500; /* Sets the font weight */
+    text-indent: 0; /* Removes text indentation */
+    text-align: left; /* Aligns the text to the left */
+}
+.product p {
+    font-size: 1rem; /* Sets the font size of the description */
+    width: 40%; /* Sets the width of the description */
+    color: rgba(7, 14, 51, 0.856); /* Sets the text color */
+    margin: 15px 0; /* Adds margin around the description */
+    font-weight: bold; /* Makes the text bold */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Sets the font family */
+}
+.product img {
+    width: 100%; /* Makes the image take up 100% of the container */
+    height: 200px; /* Sets the height of the image */
+    object-fit: cover; /* Ensures the image covers the area */
+}
+.product .add-to-cart {
+    margin-top: 20px; /* Adds margin to the top of the button */
+    background-color: #1d19ff7a; /* Sets the background color */
+    color: white; /* Sets the text color to white */
+    padding: 10px 20px; /* Adds padding inside the button */
+    font-size: 16px; /* Sets the font size of the button */
+    border: none; /* Removes the border */
+    border-radius: 2px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background-color 0.3s; /* Adds a smooth background color transition */
+}
+.star-rating {
+    display: flex; /* Uses flexbox to display stars */
+    float: right; /* Floats the rating to the right */
+    padding-bottom: 20%; /* Adds padding at the bottom */
+}
+.star {
+    font-size: 25px; /* Sets the size of the stars */
+    color: #ccc; /* Sets the default color to light gray */
+}
+.star.filled {
+    color: rgb(255, 202, 28); /* Sets the color of filled stars to yellow */
+    border-color: #7c5f00; /* Adds a border color */
+}
+footer {
+    background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MjQ0MjUz/website-background-templates.jpg'); /* Sets the background image for the footer */
+    background-size: cover; /* Ensures the background image covers the entire footer */
+    color: rgba(2, 2, 2, 0.37); /* Sets the text color */
+    text-align: center; /* Centers the text */
+    padding: 10px 0; /* Adds padding inside the footer */
+    bottom: 0; /* Positions the footer at the bottom of the page */
+    width: 100%; /* Makes the footer take up the full width */
+}
+.pop-art-alert {
+    display: none; /* Hides the alert by default */
+    position: fixed; /* Fixes the alert at the center of the screen */
+    top: 50%; /* Centers the alert vertically */
+    left: 50%; /* Centers the alert horizontally */
+    transform: translate(-50%, -50%); /* Adjusts position to truly center the alert */
+    background-color: #589bff; /* Sets the background color */
+    color: white; /* Sets the text color to white */
+    padding: 20px 40px; /* Adds padding inside the alert */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Sets the font family */
+    font-size: 20px; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
+    text-transform: uppercase; /* Makes the text uppercase */
+    border-radius: 10px; /* Rounds the corners of the alert */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    z-index: 1000; /* Ensures the alert appears above other content */
+    text-align: center; /* Centers the text inside the alert */
+    animation: pop-art-animation 0.1s ease-out forwards; /* Adds an animation to the alert */
+}
+
+@keyframes pop-art-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5); /* Starts with small scale */
+        opacity: 0; /* Starts with no opacity */
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2); /* Scales the alert larger */
+        opacity: 1; /* Increases opacity */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Returns to normal scale */
+        opacity: 1; /* Final opacity is 1 */
+    }
+}
