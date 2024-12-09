@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopCart</title>
+    <link rel="stylesheet" href="FinalProjectStyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-container">
+       <h2>LOGIN</h2>
+       <form id="login-form">
+        <div class="form-group">
+          <label for="email">Email</label> 
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+           <button type="submit">LOGIN</button>
+       </form>
+       <p>Don't have an account?&nbsp; <a href="register.html">Register here</a></p>
+    </div>
+    <div class="right">
+        <img src="https://static.vecteezy.com/system/resources/previews/011/153/672/original/online-shopping-e-commerce-3d-illustrations-png.png" alt="Design" class="right-image">
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      window.location.href = 'FinalProject2.html'; 
+    });
+  </script> 
+</body>
+</html>
