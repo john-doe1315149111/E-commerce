@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora</title>
+    <link rel="stylesheet" href="FinalProjectStyle.css">
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="https://mandauefoam.ph/cdn/shop/collections/f3c639d2fe1dac8f9ce07c8caa42f80b.jpg?v=1581494929&width=2048" alt="Side Image">
+  </div>
+    <div class="login-container">
+       <h2>Welcome</h2>
+       <form id="login-form">
+        <div class="form-group">
+          <label for="email">Email</label> 
+          <input type="email" id="email" name="email" required placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="">
+        </div>
+           <button type="submit">LOGIN</button>
+       </form>
+       <p>Don't have an account?&nbsp; <a href="register.html">Register here</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      window.location.href = 'FinalProject2.html'; 
+    });
+  </script> 
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxora</title>
+    <link rel="stylesheet" href="FinalProjectStyle2.css">
+</head>
+<body>
+    <h1>LUXORA</h1>
+    <header>
+      <div class="logo-cart">
+        <img src="https://cdn-icons-png.flaticon.com/512/181/181635.png" alt="logo" class="logo-icon-img">
+      </div>
+        <section id="search" id="Electronics" style="text-align: center;">
+            <input type="text" id="search-bar" placeholder="Search for category...&nbsp;&nbsp;Electronics,&nbsp;&nbsp;Fashion,&nbsp;&nbsp;Home,&nbsp;&nbsp;Beauty,&nbsp;&nbsp;Sports" oninput="searchProducts()">
+            <button onclick="searchCategory()">Search</button>
+        </section>
+        <div class="profile">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYXmmA0MjioHDOYgTtwFbozgccsoGB_250g&s" alt="User Icon" class="user-icon">
+      </div>
+    </header>
+    <div class="cart-button">
+      <button id="cartButton" onclick="toggleCart()">Your Cart</button>
+    </div>
+    <div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+      <h2>Your Cart</h2>
+      <div id="cartItems">
+      </div>
+      <button onclick="clearCart()">Clear Cart</button>
+      <button onclick="toggleCart()">Close</button>
+      </div>
+    </div>
+    <section id="products">
+      <div class="ad-container">
+        <img src="https://www.wistedt.net/wp-content/uploads/2020/12/campaign_world_guide_header.png" alt="Promotional Banner 1" class="ad-headline">
+        <img src="https://www.bu.edu/aphi/files/2021/06/master-pnp-cph-3c20000-3c24000-3c24500-3c24545u-Banner-1200x500.jpg" alt="Promotional Banner 2" class="ad-headline">
+        <img src="https://www.federalpremium.com/dw/image/v2/BKSZ_PRD/on/demandware.static/-/Library-Sites-VistaFederalSharedLibrary/default/dw99496acf/images/Federal-Timeline/Advocating-With-Advertisement/031-1200x500.jpg?sw=1200" alt="Promotional Banner 3" class="ad-headline">
+      </div>
+        <h2>Featured Products</h2>
+        <h4>Electronics & Gadget </h4>
+        <div class="product" id="Electronics" data-category="Electronics">
+            <img src="https://assets.nikshanonline.com/wp-content/uploads/2024/10/Vivo-V40-5G-Smartphone-10-1.jpg" alt="Smartphone 1">
+            <h3>Vivo V40 5G&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+            <h5>The Vivo V40 is a powerful mid-range smartphone that blends advanced photography features with robust performance.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱24,100.06</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Electronics" data-category="electronics">
+            <img src="https://assets.nikshanonline.com/wp-content/uploads/2024/10/CMF-BY-NOTHING-Phone-1-5G-6.jpg" alt="Smartphone 2">
+            <h3>NOTHING Phone 1 5G</h3>
+            <h5>The Nothing Phone 1 is a stylish mid-range smartphone featuring a unique LED design, solid performance, and a 50 MP dual-camera setup.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱10,326.30</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Electronics" data-category="electronics">
+            <img src="https://assets.nikshanonline.com/wp-content/uploads/2024/03/Samsung-Galaxy-A55-5G-1.png" alt="Smartphone 3">
+            <h3>Samsung Galaxy A55 5G</h3>
+            <h5>
+              The Samsung Galaxy A55 is a feature-packed mid-range smartphone offering connectivity, a sleek design and a powerful camera system for an enhanced experience.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱31,668.74</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <h4>Fashion & Apparel</h4>
+        <div class="product" id="Fashion" data-category="fashion">
+            <img src="https://m.media-amazon.com/images/I/81vst2i4OFL._AC_SY550_.jpg" alt="Cloth 1">
+            <h3>Chrisuno Men's Soft Fleece Fashion Hooded</h3>
+            <h5>The Chrisuno Men's Soft Fleece Fashion Hooded is a cozy and stylish hoodie made from soft fleece, designed for comfort and warmth with a modern, fashionable look.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱2,895.25</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Fashion" data-category="fashion">
+            <img src="https://m.media-amazon.com/images/I/61hDQfyQtrL._AC_SY550_.jpg" alt="Cloth 2">
+            <h3> Womens Sweatshirts Half Zip Cropped</h3>
+            <h5>The Women's Sweatshirts Half Zip Cropped is a trendy, comfortable sweatshirt featuring a half-zip design and a cropped fit, perfect for casual, stylish wear.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱2,142.33</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Fashion" data-category="fashion">
+            <img src="https://m.media-amazon.com/images/I/71Untg5Zt2L._AC_SY550_.jpg" alt="Cloth 3">
+            <h3>Amussiar Men's Turtleneck Sweater Slim</h3>
+            <h5>The Amussiar Men's Turtleneck Sweater Slim is a stylish, fitted sweater with a turtleneck design, offering a sleek and modern look while providing warmth and comfort.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱1,968.58</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <h4>Home & Living</h4>
+        <div class="product" id="Home" data-category="home">
+            <img src="https://m.media-amazon.com/images/I/71M7KM64+gL._AC_SY300_SX300_.jpg" alt="Home 1">
+            <h3>Floating Corner Shelf Wall-Mounted</h3>
+            <h5>The Floating Corner Shelf Wall-Mounted is stylish shelf designed to be mounted in corners, offering a modern way to display or store items without taking up floor space.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱2,084.41</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Home" data-category="home">
+            <img src="https://m.media-amazon.com/images/I/81aa5NsLu1L.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="Home 2">
+            <h3>Wood Lift Top Coffee Table</h3>
+            <h5>The Wood Lift Top Coffee Table is a functional and stylish piece of furniture with a lift-up top, providing hidden storage and a convenient surface for working or eating.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱5,791.07</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Home" data-category="home">
+            <img src="https://m.media-amazon.com/images/I/51YNi10LwNL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="Home 3">
+            <h3>Sullivans White Ceramic Vase</h3>
+            <h5>The Sullivans White Ceramic Vase is an elegant, minimalist vase made of ceramic, perfect for adding a touch of sophistication to any space with its clean white finish.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱1,273.58</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <h4>Beauty & Health</h4>
+        <div class="product" id="Beauty" data-category="beauty">
+            <img src="https://m.media-amazon.com/images/I/51dLq2cEkFL._AC_SX679_.jpg" alt="Health 1">
+            <h3>Migraine Relief Cap Ice Head Wrap</h3>
+            <h5>The Migraine Relief Cap Ice Head Wrap offers cooling therapy and gentle pressure to help alleviate migraine pain, with an adjustable and comfortable design.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱2,845.44</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Beauty" data-category="beauty">
+            <img src="https://m.media-amazon.com/images/I/7123oCekjoL._SX466_.jpg" alt="Health 2">
+            <h3>Dead Sea Mud Mask for Face and Body</h3>
+            <h5>The Dead Sea Mud Mask for Face and Body is a detoxifying mask that uses natural Dead Sea minerals to cleanse, hydrate, and rejuvenate the skin.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱981.68</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Beauty" data-category="beauty">
+            <img src="https://m.media-amazon.com/images/I/71gI89LzyfL._SX466_.jpg" alt="Health3">
+            <h3>Water Dental Flosser Teeth Pick</h3>
+            <h5>The Water Dental Flosser Teeth Pick uses water pressure to clean between teeth and gums, improving dental hygiene and preventing plaque buildup.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱2,177.08</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <h4>Sports & Outdoors</h4>
+        <div class="product" id="Sports" data-category="sports">
+            <img src="https://m.media-amazon.com/images/I/61QsSwfhnkL._AC_SX679_.jpg" alt="Sport 1">
+            <h3>Spikeball 3 Ball Original Roundnet</h3>
+            <h5>The Spikeball 3 Ball Original Roundnet is a fast-paced outdoor game set, featuring a roundnet, a net, and three balls for fun, competitive play.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱3,474.41</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Sports" data-category="sports">
+            <img src="https://m.media-amazon.com/images/I/81dPqOFAGfL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="Sport 2">
+            <h3>Franklin Sports Badminton Net Sets</h3>
+            <h5>The Franklin Sports Badminton Net Set includes a durable net and equipment for easy setup, providing everything needed for a fun badminton game.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱1,939.62</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+        <div class="product" id="Sports" data-category="sports">
+            <img src="https://m.media-amazon.com/images/I/81W1XxBm6fL._AC_SX679_.jpg" alt="Sport 3">
+            <h3>Kids Soccer Goals for Backyard Set</h3>
+            <h5>The Kids Soccer Goals for Backyard Set includes lightweight, portable goals designed for children to enjoy soccer in the backyard, with easy setup and durability.</h5>
+            <div class="star-rating">
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+                <span class="star filled">&#9733;</span>
+              </div>
+            <p>₱3,706.08</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="pop-art-alert" id="popArtAlert">
+              <div class="pop-art-message">
+                <span>Item Added to Cart!</span>
+              </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+          <div class="footer-content">
+              <div class="footer-links">
+                  <ul>
+                      <li><a href="/contact">Contact Us</a></li>
+                      <li><a href="/faq">FAQ</a></li>
+                      <li><a href="/privacy-policy">Privacy Policy</a></li>
+                      <li><a href="/terms">Terms & Conditions</a></li>
+                  </ul>
+              </div>
+              <div class="footer-social">
+                  <a href="https://facebook.com" target="_blank">Facebook</a>
+                  <a href="https://twitter.com" target="_blank">Twitter</a>
+                  <a href="https://instagram.com" target="_blank">Instagram</a>
+              </div>
+              <p>&copy; 2024 Luxora</p>
+          </div>
+    </footer>
+          <div id="cart" class="cart">
+            <ul id="cart-items"></ul>
+          </div>
+    <script>
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', function () {
+          const product = this.closest('.product');
+          const productName = product.querySelector('h3').textContent;
+          const productPrice = product.querySelector('p').textContent;
+
+          addToCart(productName, productPrice);
+      });
+    });
+
+     function addToCart(productName, productPrice) {
+      const cartItems = document.getElementById('cart-items');
+
+      const newItem = document.createElement('li');
+      newItem.textContent = `${productName} - ${productPrice}`;
+
+      cartItems.appendChild(newItem);
+    }
+</script>
+<script src="JS2.js"></script> 
+</html>
